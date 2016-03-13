@@ -298,8 +298,7 @@
   \item Ardour ;
   \item Hydrogen ;
   \item ZynAddSubFX ;
-  \item Qtractor ;
-  \item LinuxSampler.
+  \item LinuxSampler et QSampler.
   %TODO: cette liste est à étendre/revisiter
   \end{itemize}
   
@@ -346,21 +345,6 @@
   Nous allons \textbf{appliquer des effets} et \textbf{monter} les pistes audio ensemble. Enfin, nous allons \textbf{exporter} le projet en un fichier audio.
 \end{frame}
 
-\subsection{Hydrogen}
-\begin{frame}{Hydrogen}
-  \begin{columns}
-  \begin{column}{0.15\textwidth}
-    \includegraphics[width=\linewidth]{hydrogen_logo}
-  \end{column}
-  \begin{column}{0.85\textwidth}
-    \textbf{Hydrogen} est un \textbf{échantillonneur} : un logiciel de synthèse sonore à partir d'échantillons réels. En particulier, Hydrogen est spécialisé dans les \textbf{batteries} et autres \textbf{instruments de percussion}. Il possède également un \textbf{séquenceur} intégré qui permet d'écrire des lignes de batteries.
-  \end{column}
-  \end{columns}
-  \medskip
-    
-  Avec Hydrogen, nous allons \textbf{simuler des percussions réelles}.
-\end{frame}
-
 \subsection{ZynAddSubFX}
 \begin{frame}{ZynAddSubFX}
   \begin{columns}
@@ -378,7 +362,37 @@
   Une utilisation avancée étant compliquée, nous allons nous contenter d'utiliser les presets proposés.
 \end{frame}
 
-%TODO: LinuxSampler
+\subsection{LinuxSampler}
+\begin{frame}{LinuxSampler et QSampler}
+  \begin{columns}
+  \begin{column}{0.15\textwidth}
+    \includegraphics[width=\linewidth]{linuxsampler_logo}
+  \end{column}
+  \begin{column}{0.85\textwidth}
+    \textbf{LinuxSampler} est un \textbf{échantillonneur} : un logiciel de synthèse sonore à partir d'échantillons réels. C'est probablement le plus puissant échantillonneur libre disponible. Il peut gérer sans problème des sets d'échantillons de \emph{plusieurs gigabytes}.
+  \end{column}
+  \end{columns}
+  \medskip
+  
+  Avec LinuxSampler, nous allons \textbf{simuler des instruments réels}.
+  N'ayant pas d'interface graphique par défaut, on utilise \textbf{QSampler} pour configurer les échantillons utilisés.
+\end{frame}
+
+\subsection{Hydrogen}
+\begin{frame}{Hydrogen}
+  \begin{columns}
+  \begin{column}{0.15\textwidth}
+    \includegraphics[width=\linewidth]{hydrogen_logo}
+  \end{column}
+  \begin{column}{0.85\textwidth}
+    \textbf{Hydrogen} est un \textbf{échantillonneur} comme LinuxSampler. Contrairement à celui-ci, Hydrogen est spécialisé dans les \textbf{batteries} et autres \textbf{instruments de percussion}. Il possède également un \textbf{séquenceur} intégré qui permet d'écrire des lignes de batteries.
+  \end{column}
+  \end{columns}
+  \medskip
+    
+  Avec Hydrogen, nous allons \textbf{simuler des percussions réelles}.
+\end{frame}
+
 %TODO: Rosegarden??? Ou alternative
 
 \end{document}
